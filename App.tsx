@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import WelcomeMessage from './components/WelcomeMessage'; // ここを追加！
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>こんにちは！preppalへようこそ！
-      </Text>
+      {/* ここに WelcomeMessage コンポーネントを配置します */}
+      <WelcomeMessage userName="オーナー" appName="Preppal" />
       <StatusBar style="auto" />
     </View>
   );
